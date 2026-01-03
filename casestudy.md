@@ -31,11 +31,11 @@ External links break. The repository acknowledges this reality upfront: *"All Li
 
 ### The Data Flow Pattern
 
-```
-User Query → Categorical Scan → Link Selection → External Resource
-     ↑                                                  ↓
-     └──────────── Feedback Loop (Issue Reporting) ────┘
-```
+The user journey follows a circular pattern:
+1. **User Query** → Scan categories in the table
+2. **Categorical Scan** → Select relevant project link
+3. **Link Selection** → Navigate to external resource
+4. **Feedback Loop** → Report broken links via issues, closing the maintenance cycle
 
 The architecture implements a **fire-and-forget pattern** for content delivery—minimal server-side complexity, maximum reliability through GitHub's infrastructure.
 
@@ -112,7 +112,7 @@ Data scientists waste 40% of their time finding quality learning resources. The 
 3. **Phase 3:** API access for enterprise training platforms
 
 **The ROI Story:**
-If we save each of our 10,000 users just 5 hours of search time, that's 50,000 hours saved. At $50/hour developer time, we've created $2.5M in time-value. Our operating cost? $0.
+If we save each of our 10,000 users just 5 hours of search time, that's 50,000 hours of developer time saved. At an average rate of $50/hour, we've created $2.5M in quantifiable value. Our infrastructure operating cost? $0—thanks to GitHub's platform.
 
 **The Ask:**
 We're not asking for funding to build infrastructure. We're asking for resources to accelerate curation and establish this as the definitive AI project directory before competitors emerge.
